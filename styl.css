@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(186, 167, 203);
+    background-color: rgb(44, 177, 159);
 }
 nav{
     background-image: radial-gradient(black, purple);
@@ -51,4 +51,7 @@ p{
 }
 h3,h2{
     font-family: Tahoma;
+}
+#QA{
+    Padding:10px;
 }
