@@ -1,11 +1,54 @@
-#par1 {
-	Font-family: Stencil;
-	Font-size: 40px;
-	tEXT-align: Center;
+body{
+    background-color: rgb(186, 167, 203);
 }
-h1.11{
-		background-color: Lavender;
-	
+nav{
+    background-image: radial-gradient(black, purple);
+    font-family: Arial;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bolder;
+    position: sticky;
+    top: 0px;  
 }
-	
-	
+nav a{
+    background-color: grey;
+    padding:10px;
+    border-radius:8px;
+}
+nav a[href="#"]{
+color:red;
+background-color: rgb(22, 99, 192);
+width: 80px;
+text-align: center;
+height: 20px;
+padding: 10px;
+
+}
+nav a:hover{
+    background-color:bisque;
+    padding: 10px;
+}
+
+nav a{
+    text-decoration: none;
+}
+h1{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:chocolate;
+    text-align: center;
+    color: white;
+
+}
+div{
+    background-color: rgb(22, 99, 192);
+    border-radius: 8px;
+}
+p{
+  font-family: Tahoma;
+}
+h3,h2{
+    font-family: Tahoma;
+}
