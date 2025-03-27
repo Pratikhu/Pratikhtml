@@ -166,8 +166,120 @@ return 0;
 <h3>OUTPUT:</h3>
 <img src="Perfect.png"></img>
 
+<h1><div>Iterative Control Structure</div></h1>
+<h3>For</h3>
+<p>The for loops are iterated over a range of values or elements in a collection. These are mainly used where the number of iterations is known beforehand like iterating through elements in an array or predefined range.</p>
+<p>Syntax:
+for (initialization; condition; update) { * code to be executed * }<br>
+<b>Example Program:</b><br>
+<i>To print pattern in C</i><br>
+#include &lt;stdio&gt;><br>
 
+    int main()<br>
+    {<br>
 
+        for (int i = 0; i < 5; i++) {<br>
+            printf("%d ", i);<br>
+        }<br>
+        printf("\n");<br>
+    
+        int count = 0;<br>
+        while (count < 5) {<br>
+            printf("%d ", count);<br>
+            count++;<br>
+        }<br>
+        printf("\n");<br>
+        count = 0;<br>
+        do {<br>
+            printf("%d ", count);<br>
+            count++;<br>
+        } while (count < 5);<br>
+        printf("\n");<br>
+        return 0;<br>
+    }
+    <h3>OUTPUT:</h3>
+    <img src="For.png"></img></p>
+    <h3>While</h3>
+<p>While loops execute as long as specifies condition evaluates to true. These are suitable for situations where the number of iterations is not known and depends on dynamic conditions.</p>
+<p>Syntax:
+    while (condition) { * code to be executed * }<br>
+    <b>Example Program:</b><br>
+<i>To print sum of first 10 natural numbers</i><br>
+#include &lt;stdio.h&gt;><br>
+
+    int main() {<br>
+        int sum = 0, i = 1;<br>
+    
+        while (i <= 10) {<br>
+          <br>
+            sum += i;<br>
+            i++;    <br>   
+        }<br>
+    
+        printf("%d", sum);<br>
+        return 0;<br>
+    }
+    <h3>OUTPUT:</h3>
+<img src="While.png"></img>
+    <h3>Do While</h3>
+<p>Do while loops are similar to while loop but guarantee at least one execution of the loop body before checking the condition. These are useful when loop must execute at least once regardless of the condition.</p>
+<p>Syntax:
+    do { * code to be executed * } while (condition);<br>
+    <b>Example Program:</b><br>
+    <i>To print a message multiple times</i><br>
+    #include &lt;stdio.h&gt;<br>
+ 
+        int main(){<br>
+        
+
+           int a = 1;<br>
+        
+           do{<br>
+              printf("Hello World\n");<br>
+              a++;<br>
+           } while(a <= 5);<br>
+           printf("End of loop"); <br>
+           
+           return 0;<br>
+        }<h3>OUTPUT:</h3>
+        <img src="Do While.png"></img>
+        <h1><div>Arrays in C</div></h1>
+        <p>Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
+        To create an array, define the data type (like int) and specify the name of the array followed by square brackets [].
+
+        To insert values to it, use a comma-separated list inside curly braces, and make sure all values are of the same data type:</p>
+        <p>Mainly of two types:</p>
+        <h3>1-Dimensional Array</h3>
+        <p>A one-dimensional array can be viewed as a linear sequence of elements. We can only increase or decrease its size in a single direction.</p>
+        <p>Syntax:</p>
+        <p>element_type  array_name[array_size];</p>
+        <h3>2-Dimensional Array</h3>
+        <p>A 2D array is also known as a matrix (a table of rows and columns).
+
+           </p>
+        <p>Syntax:</p>
+        <p>element_type  array_name[no.of rows][no. of columns];</p>
+        <h3>String Array</h3>
+        <p>In C, an array of strings is a 2D array where each row contains a sequence of characters terminated by a ‘\0’ Null character (strings). It is used to store multiple strings in a single array.</p>
+        <p>Syntax:</p>
+        <p>char arr_name[r][m] = {s1, s2, …., sn};</p>
+        <p><b>Example Program:</b><br>
+    <i>To print a message multiple times</i><br></p>
+    <p>#include &lt;stdio.h&gt;<br>
+
+        int main() {<br>
+        
+  
+            char arr[5][15] = {"Pratik", "Pratiks",
+                               "Bajracharya"};<br>
+          
+            for (int i = 0; i < 3; i++)<br>
+                printf("%s\n", arr[i]);<br>
+            return 0;<br>
+        }<br>
+        </p>
+        <h3>OUTPUT:</h3>
+<img src="String.png"></img>
 </body>
 </html>
 
