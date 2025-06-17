@@ -1,0 +1,326 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styl.css">
+        <title>Class 12 Syllabus</title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <nav id="Syla">
+        <p id="Syl">Chapter 12 Syllabus</p>
+        </nav>
+        <br>
+        <nav>
+            <a href="Chapter 1.htm">Chapter 1</a>
+        </nav>
+        <br>
+        <nav id="St">
+        <p id="DBMS">Database Management System</p>
+</nav>
+    <h1>Database Concepts and SQL Fundamentals</h1>
+
+    <section>
+        <table>
+            <tr>
+                <td>
+        <h2>Data and Information</h2>
+        <p><span class="highlight">Data:</span> Raw, unprocessed facts and figures without context.</p>
+        <p><span class="highlight">Information:</span> Processed, organized data that provides meaning and value.</p></td>
+    <td><img src="https://miro.medium.com/v2/resize:fit:1400/1*szBsfY6lp8A0jb1zOvJ0mw.jpeg"></td></td></tr>
+    </section>
+    </table>
+
+    <section>
+        <h2>Features of Information</h2>
+        <ul>
+            <li>Accuracy</li>
+            <li>Relevance</li>
+            <li>Timeliness</li>
+            <li>Completeness</li>
+            <li>Consistency</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Database and Its Purpose</h2>
+        <p>A <span class="highlight">database</span> is an organized collection of data. Its purpose is to manage, retrieve, and store data efficiently.
+        Computer databases typically store aggregations of data records or files that contain information such as sales transactions, customer data, financials and product information.
+
+Databases are used for storing, maintaining and accessing any sort of data. They collect information on people, places or things. This information is gathered in one place so it can be observed and analyzed. Databases can be thought of as an organized collection of information.</p>
+    </section>
+
+    <section>
+        <h2>Database Terminologies</h2>
+        <ul>
+            <li><strong>Table:</strong> Collection of related data in rows and columns.</li>
+            <li><strong>Field:</strong> A column; single data element.</li>
+            <li><strong>Record / Tuple:</strong> A row; complete set of fields.</li>
+            <li><strong>Object:</strong> An instance of a class in OODBMS.</li>
+            <li><strong>Keys:</strong>
+                <ul>
+                    <li>Primary Key</li>
+                    <li>Foreign Key</li>
+                    <li>Candidate Key</li>
+                    <li>Composite Key</li>
+                </ul>
+            </li>
+            <li><strong>Data Dictionary:</strong> Metadata repository containing details of the database structure.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Database Management System (DBMS)</h2>
+    
+        <h3>Introduction</h3>
+        <p>
+            A DBMS is software used to define, create, maintain, and control access to databases. 
+            It provides a systematic and organized way to store, manage, and retrieve data efficiently.
+        </p>
+    
+        <h3>Objectives</h3>
+        <ul>
+            <li><strong>Efficient data management:</strong> Organizes large volumes of data for quick and reliable access.</li>
+            <li><strong>Data security and integrity:</strong> Ensures that only authorized users can access and modify data, while maintaining its accuracy and consistency.</li>
+            <li><strong>User-friendly interface:</strong> Offers tools and interfaces (like SQL) that make interacting with the database easier for users and developers.</li>
+        </ul>
+    
+        <h3>Advantages</h3>
+        <ul>
+            <li><strong>Centralized control:</strong> Manages all data in one place, making administration and maintenance easier.</li>
+            <li><strong>Reduced data redundancy:</strong> Eliminates duplicate data by storing information in a single location accessible to multiple applications.</li>
+            <li><strong>Improved data security:</strong> Provides access controls, encryption, and audit trails to protect sensitive data.</li>
+        </ul>
+    
+        <h3>Disadvantages</h3>
+        <ul>
+            <li><strong>Complex setup:</strong> Installation and configuration require technical expertise and time.</li>
+            <li><strong>High cost:</strong> Licensing, hardware, and maintenance can be expensive for large systems.</li>
+            <li><strong>Performance overhead:</strong> May require more system resources, especially for complex queries or large datasets.</li>
+        </ul>
+    </section>
+    
+
+    <section>
+        <h2>Types of Database Models</h2>
+        <ul>
+            <li><strong>Hierarchical Model:</strong> Tree structure. Simple but inflexible.</li>
+            <li><strong>Network Model:</strong> Graph structure. Flexible but complex.</li>
+            <li><strong>Relational Model:</strong> Tables. Easy to use and widely adopted.</li>
+            <li><strong>Entity-Relational Model:</strong> Conceptual design using entities and relationships.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Integrity Constraints</h2>
+        <ul>
+            <li><strong>Domain:</strong> Valid values for an attribute.</li>
+            <li><strong>Entity:</strong> Unique identifiers (Primary Key).</li>
+            <li><strong>Referential:</strong> Consistency using Foreign Keys.</li>
+            <li><strong>User-Defined:</strong> Business-specific rules.</li>
+        </ul>
+    </section>
+
+    <section>
+       <u><h2>Normalization</h2></u> 
+        <h3>Introduction</h3>
+        <p>Normalization in SQL is the process of organizing data in a database to reduce redundancy and improve data integrity. It involves breaking down large tables into smaller ones and defining relationships between them using foreign keys.</p>
+        <h3>Normal Forms</h3>
+        <ul>
+            <li><strong>1NF:</strong> No repeating groups.</li>
+            <li><strong>2NF:</strong> No partial dependency on the primary key.</li>
+            <li><strong>3NF:</strong> No transitive dependency.</li>
+        </ul>
+        <h3>Advantages</h3>
+        <ul>
+            <li>Reduces redundancy</li>
+            <li>Improves integrity</li>
+        </ul>
+        <h3>Disadvantages</h3>
+        <ul>
+            <li>Complex queries</li>
+            <li>Performance may drop due to joins</li>
+        </ul>
+    </section>
+
+    <section>
+        <u><h2>Centralized vs Distributed Database</h2></u>
+    
+        <h3>Introduction</h3>
+        <p>
+            A <strong>Centralized Database</strong> stores all data in a single location, usually on one server. 
+            A <strong>Distributed Database</strong> spreads data across multiple physical locations or servers connected via a network.
+        </p>
+    
+        <h3>Centralized Database</h3>
+        <ul>
+            <li><strong>Advantages:</strong> Easier management, centralized control, simpler backup and security.</li>
+            <li><strong>Disadvantages:</strong> Single point of failure, limited scalability, slower access for remote users.</li>
+        </ul>
+    
+        <h3>Distributed Database</h3>
+        <ul>
+            <li><strong>Advantages:</strong> Fault-tolerant, scalable, faster local access, supports data sharing across regions.</li>
+            <li><strong>Disadvantages:</strong> Complex management, synchronization and consistency challenges, higher setup cost.</li>
+        </ul>
+    
+        <h3>Comparison</h3>
+        <table border="1" cellpadding="5">
+            <tr>
+                <th>Aspect</th>
+                <th>Centralized Database</th>
+                <th>Distributed Database</th>
+            </tr>
+            <tr>
+                <td>Storage Location</td>
+                <td>Single server is available</td>
+                <td>Multiple locations/servers are available</td>
+            </tr>
+            <tr>
+                <td>Reliability</td>
+                <td>Less reliability (single point of failure)</td>
+                <td>More reliability (redundancy)</td>
+            </tr>
+            <tr>
+                <td>Performance</td>
+                <td>Slower for remote users</td>
+                <td>Faster local access</td>
+            </tr>
+            <tr>
+                <td>Management</td>
+                <td>Simpler in comparison</td>
+                <td>More complex in comparison</td>
+            </tr>
+            <tr>
+                <td>Cost</td>
+                <td>Lower initial cost</td>
+                <td>Higher due to infrastructure</td>
+            </tr>
+        </table>
+    </section>
+    
+    <section>
+        <h2>Database Security</h2>
+    
+        <h3>Introduction</h3>
+        <p>
+            Database Security refers to the techniques and practices used to protect databases from unauthorized access, misuse, theft, or corruption. 
+            It ensures the <strong>confidentiality</strong> (only authorized users access data), <strong>integrity</strong> (data remains accurate and unchanged), 
+            and <strong>availability</strong> (data is accessible when needed) of the stored information.
+        </p>
+    
+        <h3>Challenges</h3>
+        <ul>
+            <li><strong>Access control:</strong> Preventing unauthorized users from viewing or modifying sensitive data.</li>
+            <li><strong>Data privacy:</strong> Ensuring personal or confidential information is not exposed or misused.</li>
+            <li><strong>Cyber threats:</strong> Protecting against malware, hacking, and other forms of cyber attacks targeting databases.</li>
+        </ul>
+    
+        <h3>Security Measures</h3>
+        <ul>
+            <li><strong>Encryption:</strong> Converting data into a coded format to prevent unauthorized access during storage or transmission.</li>
+            <li><strong>Authentication:</strong> Verifying user identities before granting access, typically using passwords, biometrics, or multi-factor methods.</li>
+            <li><strong>Auditing:</strong> Monitoring and logging database activities to detect suspicious behavior and maintain accountability.</li>
+        </ul>
+    
+        <h3>Roles of DBA (Database Administrator)</h3>
+        <ul>
+            <li><strong>Ensuring data integrity and security:</strong> Implementing policies and safeguards to maintain data accuracy and protection.</li>
+            <li><strong>Managing backups:</strong> Regularly backing up data to prevent loss in case of system failure or attacks.</li>
+            <li><strong>Granting access and privileges:</strong> Assigning appropriate permissions to users based on their roles and responsibilities.</li>
+        </ul>
+    </section>
+    
+
+    <section>
+        <h2>Practical SQL Topics</h2>
+        <h3>DDL and DML</h3>
+        <ul>
+            <li><strong>DDL: Used to define and manage database structure (tables, schemas, etc.)</strong> <br>CREATE, ALTER, DROP etc</li>
+            <li><strong>DML: Used to manage data inside tables (insert, update, delete, query).</strong> <br>INSERT, UPDATE, DELETE, SELECT etc</li>
+        </ul>
+
+        <h3>SQL Data Types</h3>
+<ul>
+    <li>
+        <strong>CHAR(n)</strong> – Fixed-length character string.<br>
+        <code>name CHAR(10)</code>
+    </li><br><br>
+    <li>
+        <strong>VARCHAR(n)</strong> – Variable-length character string.<br>
+        <code>email VARCHAR(100)</code>
+    </li><br><br>
+    <li>
+        <strong>BINARY(n)</strong> – Fixed-length binary data.<br>
+        <code>hash BINARY(16)</code>
+    </li><br><br>
+    <li>
+        <strong>VARBINARY(n)</strong> – Variable-length binary data.<br>
+        <code>image VARBINARY(100)</code>
+    </li><br><br>
+    <li>
+        <strong>TINYBLOB</strong> – Very small binary object (≤255 bytes).<br>
+        <code>icon TINYBLOB</code>
+    </li><br><br>
+    <li>
+        <strong>TINYTEXT</strong> – Very small text (≤255 characters).<br>
+        <code>summary TINYTEXT</code>
+    </li><br><br>
+    <li>
+        <strong>TEXT</strong> – Medium-length text (≤65,535 characters).<br>
+        <code>description TEXT</code>
+    </li><br><br>
+    <li>
+        <strong>LONGTEXT</strong> – Very large text (≤4GB).<br>
+        <code>content LONGTEXT</code>
+    </li><br><br>
+    <li>
+        <strong>ENUM(val1, val2, ...)</strong> – Set of predefined string values.<br>
+        <code>status ENUM('active', 'inactive')</code>
+    </li><br><br>
+    <li>
+        <strong>BIT(n)</strong> – Bit field (n-bit binary data).<br>
+        <code>permissions BIT(4)</code>
+    </li><br><br>
+    <li>
+        <strong>BOOLEAN</strong> – Stores TRUE or FALSE (alias for TINYINT(1)).<br>
+        <code>isAvailable BOOLEAN</code>
+    </li><br><br>
+    <li>
+        <strong>TINYINT</strong> – Small integer (-128 to 127 or 0 to 255).<br>
+        <code>age TINYINT</code>
+    </li><br><br>
+    <li>
+        <strong>INTEGER</strong> – Standard integer number.<br>
+        <code>userID INTEGER</code>
+    </li><br><br>
+    <li>
+        <strong>FLOAT</strong> – Approximate single-precision float.<br>
+        <code>temperature FLOAT</code>
+    </li><br><br>
+    <li>
+        <strong>DOUBLE</strong> – Approximate double-precision float.<br>
+        <code>accuracy DOUBLE</code>
+    </li><br><br>
+    <li>
+        <strong>DECIMAL(p, s)</strong> – Exact decimal (precision and scale).<br>
+        <code>price DECIMAL(10, 2)</code>
+    </li><br><br>
+    <li>
+        <strong>DATE</strong> – Stores date (YYYY-MM-DD).<br>
+        <code>birthdate DATE</code>
+    </li><br><br>
+    <li>
+        <strong>DATETIME</strong> – Stores date and time (YYYY-MM-DD HH:MM:SS).<br>
+        <code>created_at DATETIME</code>
+    </li>
+</ul>
+
+    </section>
+
+</body>
+</html>
+
+
+    </body>
+</html>

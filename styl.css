@@ -1,8 +1,8 @@
 body{
-    background-color: rgb(44, 177, 159);
+    background-color: rgb(55, 149, 226);
 }
 nav{
-    background-image: radial-gradient(black, purple);
+    background-color: Green ;
     font-family: Arial;
     display: flex;
     justify-content: space-around;
@@ -10,7 +10,7 @@ nav{
     border-radius: 8px;
     text-align: center;
     font-weight: bolder;
-    position: sticky;
+    
     top: 0px;  
 }
 nav a{
@@ -28,7 +28,7 @@ padding: 10px;
 
 }
 nav a:hover{
-    background-color:bisque;
+    background-color:rgb(255, 140, 9);
     padding: 10px;
 }
 
@@ -55,3 +55,69 @@ h3,h2{
 #QA{
     Padding:10px;
 }
+#Syl{
+    text-align: center;
+    font-size: 35px;
+
+}
+#Syla{
+    background-color: blueviolet;
+    padding:0px;
+    color:White;
+    
+}
+#st{
+    background-color: rgb(8, 145, 99);
+    padding: 0px;
+    color:White;
+    position: sticky;
+
+}
+#DBMS{
+     text-align: center;
+    font-size: 20px;
+}
+ h1, h2, h3 {
+            color: #ffffff;
+        }
+        h1 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #000000;
+        }
+
+ img{
+            width: 200px;
+            height: 200px;
+        }
+table {
+    width: 100%;             
+    border-spacing: 20px 0;  
+  }
+  td:f {
+    width: 60%;               
+    vertical-align: top;
+  }
+  td:l {
+    width: 40%;               
+    text-align: right;        
+    vertical-align: top;
+  }
+  img {
+    max-width: 100%;          
+    height: auto;
+  }
+  #tableo{
+    width: 1300px;
+    height: 600px;
+  }
