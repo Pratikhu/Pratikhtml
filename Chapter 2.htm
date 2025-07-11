@@ -1,0 +1,237 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styl.css">
+        <title>Class 12 Syllabus</title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <nav id="Syla">
+        <p id="Syl">Chapter 12 Syllabus</p>
+        </nav>
+        <br>
+        <nav>
+            <a href="Chapter 1.htm">Chapter 1</a>
+            <a href="Chapter 2.htm">Chapter 2</a>
+        </nav>
+        <br>
+        <nav id="St">
+        <p id="DBMS">C Programming Concepts</p>
+</nav>
+    <h1>C Programming</h1>
+
+    <section>
+    <h2>Working with a Function</h2>
+    <p>A <span class="highlight">function</span> is a block of code designed to perform a specific task. It helps in modular programming, improves code reusability, and makes complex programs easier to manage.</p>
+    
+    <h3>a. Define Function</h3>
+    <p>A function is a named block of code that performs a specific task when it is called. It may or may not return a value.</p>
+    
+    <h3>b. Syntax of Functions</h3>
+    <p>The general syntax of a function is:</p>
+    <pre><code>return_type function_name(parameters) {
+    // body of function
+}</code></pre>
+    
+    <h3>c. Types of Functions</h3>
+    <ul>
+        <li><strong>Library Functions:</strong> Built-in functions provided by the language (e.g., <code>printf()</code>, <code>sqrt()</code>).</li>
+        <li><strong>User-defined Functions:</strong> Functions created by the programmer to perform specific tasks.</li>
+    </ul>
+
+    <h3>d. Components of Function</h3>
+    <ul>
+        <li><strong>i. Function Prototype:</strong> Declaration of a function before its actual definition, mentioning return type and parameters.</li>
+        <li><strong>ii. Function Call:</strong> Invocation of the function from main or another function using its name.</li>
+        <li><strong>iii. Function Definition:</strong> The actual body of the function where the task is defined.</li>
+        <li><strong>iv. Return Type:</strong> The data type of value the function returns (e.g., <code>int</code>, <code>void</code>).</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Categories of Function with Example</h2>
+
+<section>
+    <h2>Categories of Functions with Examples</h2>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>i. Function with return type but no arguments</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+            <td>
+                <p><u>This function returns a number but takes no input.</u></p>
+                <pre><code>#include &lt;stdio.h&gt;
+
+int get() {
+    return 67;
+}
+
+int main() {
+    int num = get();
+    printf("Returned number: %d", num);
+    printf("\nProgram executed by Pratik Bajracharya");
+    return 0;
+}</code></pre>
+            </td>
+            <td><img src="C0.jpg"  width="500"></td>
+        </tr>
+
+        <tr>
+            <th>ii. Function with return type with arguments</th>
+            <th>Output </th>
+        </tr>
+        <tr>
+            <td>
+                <p><u>This function takes two integers as input and returns their sum.</u></p>
+                <pre><code>#include &lt;stdio.h&gt;
+
+int add(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int result = add(10, 20);
+    printf("The Sum is %d", result);
+    printf("\nProgram executed by Pratik Bajracharya");
+    return 0;
+}</code></pre>
+            </td>
+            <td><img src="C1.jpg"  width="500"></td>
+        </tr>
+
+        <tr>
+            <th>iii. Function with no return type with no arguments</th>
+            <th>Output </th>
+        </tr>
+        <tr>
+            <td>
+                <p><u>This function prints a message and returns nothing.</u></p>
+                <pre><code>#include &lt;stdio.h&gt;
+
+void pro() {
+    printf("Program executed by Pratik Bajracharya");
+}
+
+int main() {
+    pro();
+    return 0;
+}</code></pre>
+            </td>
+            <td><img src="C2.jpg" width="500"></td>
+        </tr>
+
+        <tr>
+            <th>iv. Function with no return type with arguments</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+            <td>
+                <p><u>This function takes two numbers, adds them, and prints the result directly.</u></p>
+                <pre><code>#include &lt;stdio.h&gt;
+
+void Sum(int x, int y) {
+    printf("the Sum is %d", x + y);
+    printf("\nProgram execcuted by Pratik Bajracharya");
+}
+
+int main() {
+    Sum(7, 11);
+    return 0;
+}</code></pre>
+            </td>
+            <td><img src="C3.jpg"  width="500"></td>
+        </tr>
+    </table>
+</section>
+
+
+
+<section>
+    <h2>Storage Classes</h2>
+    <ul>
+        <li><strong>i. Automatic (auto):</strong> The default storage class for local variables. They are created and destroyed automatically when the function is called and exited.</li>
+        <li><strong>ii. External (extern):</strong> Used to declare a global variable or function defined in another file.</li>
+        <li><strong>iii. Register:</strong> Requests the compiler to store the variable in CPU register instead of RAM for faster access.</li>
+        <li><strong>iv. Static:</strong> Retains the value of the variable between multiple function calls and limits the scope to the function or file.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>4. Recursive Function in C</h2>
+    <p>A <span class="highlight">recursive function</span> is a function that calls itself to solve a problem. It breaks down a task into smaller sub-tasks of the same kind. Each recursive call should move toward a base case, which terminates the recursion and prevents infinite looping.</p>
+
+    <h3>Syntax of Recursive Function</h3>
+    <pre><code>
+return_type function_name(parameters) {
+    if (base_condition)
+        return value;
+    else
+        return function_name(smaller_problem);
+}
+    </code></pre>
+
+    <h3>Example: Factorial using Recursion</h3>
+    <table border="1" cellspacing="0" cellpadding="8">
+        <tr>
+            <td>
+                <pre><code>#include &lt;stdio.h&gt;
+
+int factorial(int n) {
+    if (n == 0)
+        return 1;
+    else
+        return n * factorial(n - 1);
+}
+
+int main() {
+    int result = factorial(6);
+    printf("Factorial of 6 is %d", result);
+    printf("\nProgram executed by Pratik Bajracharya");
+    return 0;
+}</code></pre>
+            </td>
+            <td><img src="C5.jpg" alt="Factorial Recursive Output"></td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>5. Passing an Array to a Function in C</h2>
+    <p>In C, arrays are passed to functions by reference. This means any modification to array elements inside the function affects the original array. You must also pass the size of the array separately, since array size isn’t passed automatically.</p>
+
+    <h3>Example: Passing Array to a Function</h3>
+    <table border="1" cellspacing="0" cellpadding="8">
+        <tr>
+            <td>
+                <pre><code>#include &lt;stdio.h&gt;
+
+void display(int ar[], int size) {
+    for (int i = 0; i &lt; size; i++) {
+        printf("%d ", ar[i]);
+    }
+}
+
+int main() {
+    int numbers[] = {6, 7, 8, 9, 10};
+    display(numbers, 5);
+    return 0;
+}</code></pre>
+            </td>
+            <td><img src="C6.jpg" alt="Array Passing Output"></td>
+        </tr>
+    </table>
+</section>
+
+
+
+
+
+</body>
+</html>
+
+
+    </body>
+</html>
