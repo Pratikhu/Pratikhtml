@@ -13,7 +13,7 @@
         <br>
         <nav>
             <a href="Chapter 1.htm">Chapter 1</a>
-            <a href="Chapter 2.htm">Chapter 2</a>
+            <a href="Chapter 2.htm">Chapter 4</a>
         </nav>
         <br>
         <nav id="St">
@@ -158,12 +158,14 @@ Databases are used for storing, maintaining and accessing any sort of data. They
             <li><strong>Advantages:</strong> Easier management, centralized control, simpler backup and security.</li>
             <li><strong>Disadvantages:</strong> Single point of failure, limited scalability, slower access for remote users.</li>
         </ul>
+        <img src ="centralized.jpg" alt="w">
     
         <h3>Distributed Database</h3>
         <ul>
             <li><strong>Advantages:</strong> Fault-tolerant, scalable, faster local access, supports data sharing across regions.</li>
             <li><strong>Disadvantages:</strong> Complex management, synchronization and consistency challenges, higher setup cost.</li>
         </ul>
+        <img src ="distributed.png" alt="w">
     
         <h3>Comparison</h3>
         <table border="1" cellpadding="5">
@@ -318,6 +320,112 @@ Databases are used for storing, maintaining and accessing any sort of data. They
 </ul>
 
     </section>
+    <body>
+    <h1>Database Concepts Summary</h1>
+
+    <h2>DBA and Roles of DBA</h2>
+    <p><strong>DBA (Database Administrator)</strong><br />
+    A DBA is responsible for managing and maintaining the database system to ensure its availability, integrity, security, and performance.</p>
+    <h3>Roles of DBA:</h3>
+    <ul>
+        <li><strong>Installation and Configuration:</strong> Installing DBMS software and configuring the database.</li>
+        <li><strong>Security Management:</strong> Controlling access and managing user roles and permissions.</li>
+        <li><strong>Backup and Recovery:</strong> Ensuring data backup and recovery strategies.</li>
+        <li><strong>Performance Tuning:</strong> Optimizing database queries and indexing.</li>
+        <li><strong>Data Integrity:</strong> Enforcing data consistency and constraints.</li>
+        <li><strong>Capacity Planning:</strong> Monitoring and planning storage needs.</li>
+        <li><strong>Troubleshooting:</strong> Identifying and resolving database issues.</li>
+        <li><strong>Data Modeling:</strong> Designing database schema and structures.</li>
+    </ul>
+
+    <h2>ER Diagrams</h2>
+    <h3>Introduction</h3>
+    <p>An Entity-Relationship (ER) diagram visually represents the structure of a database, showing entities, attributes, and relationships.</p>
+    <ul>
+        <li><strong>Entity:</strong> A real-world object or concept (e.g., Student, Employee). Represented by a rectangle.</li>
+        <li><strong>Attributes:</strong> Properties or characteristics of entities (e.g., Student Name, Employee ID). Represented by ovals.</li>
+        <li><strong>Relationships:</strong> Associations between entities (e.g., Enrolls, Works For). Represented by diamonds.</li>
+        <li><strong>Cardinality:</strong> Specifies the number of instances of one entity related to instances of another entity.
+            <ul>
+                <li>One-to-One (1:1)</li>
+                <li>One-to-Many (1:N)</li>
+                <li>Many-to-Many (M:N)</li>
+            </ul>
+        </li>
+        <li><strong>Degree:</strong> Number of entities involved in a relationship (usually binary - between two entities).</li>
+    </ul>
+
+    <h3>Symbols:</h3>
+    <ul>
+        <li><strong>Rectangle:</strong> Entity</li>
+        <li><strong>Oval:</strong> Attribute</li>
+        <li><strong>Diamond:</strong> Relationship</li>
+        <li><strong>Lines:</strong> Connect entities to attributes or relationships</li>
+        <li><strong>Crow’s foot notation or numbers:</strong> Represent cardinality</li>
+    </ul>
+
+    <h2>SQL (DDL and DML)</h2>
+    <ul>
+        <li><strong>DDL (Data Definition Language):</strong> Commands that define database structure.
+            <ul>
+                <li>Examples: <code>CREATE</code>, <code>ALTER</code>, <code>DROP</code></li>
+            </ul>
+        </li>
+        <li><strong>DML (Data Manipulation Language):</strong> Commands that manipulate data within tables.
+            <ul>
+                <li>Examples: <code>SELECT</code>, <code>INSERT</code>, <code>UPDATE</code>, <code>DELETE</code></li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Data Constraints</h2>
+    <ul>
+        <li><strong>NOT NULL:</strong> Ensures a column cannot have NULL values.</li>
+        <li><strong>UNIQUE:</strong> Ensures all values in a column are unique.</li>
+        <li><strong>PRIMARY KEY:</strong> Uniquely identifies each record; combines NOT NULL and UNIQUE.</li>
+        <li><strong>AUTO INCREMENT:</strong> Automatically generates a unique number for new rows (commonly used with primary keys).</li>
+    </ul>
+
+    <h2>Operators</h2>
+    <ul>
+        <li><strong>AND:</strong> Both conditions must be true.</li>
+        <li><strong>OR:</strong> Either condition must be true.</li>
+        <li><strong>NOT:</strong> Negates the condition.</li>
+    </ul>
+
+    <h2>WHERE Clause</h2>
+    <p>Filters records based on specified conditions.</p>
+    <pre><code>SELECT * FROM Students WHERE Age &gt; 18;</code></pre>
+
+    <h2>ORDER BY</h2>
+    <p>Sorts the result set by one or more columns, ascending (<code>ASC</code>) or descending (<code>DESC</code>).</p>
+    <pre><code>SELECT * FROM Students ORDER BY LastName ASC;</code></pre>
+
+    <h2>SQL JOINs</h2>
+    <ul>
+        <li><strong>INNER JOIN:</strong> Returns records with matching values in both tables.
+            <pre><code>SELECT A.*, B.*
+FROM TableA A
+INNER JOIN TableB B ON A.id = B.id;</code></pre>
+        </li>
+        <li><strong>LEFT JOIN (LEFT OUTER JOIN):</strong> Returns all records from left table and matched records from right table. NULL for non-matches.
+            <pre><code>SELECT A.*, B.*
+FROM TableA A
+LEFT JOIN TableB B ON A.id = B.id;</code></pre>
+        </li>
+        <li><strong>RIGHT JOIN (RIGHT OUTER JOIN):</strong> Returns all records from right table and matched records from left table. NULL for non-matches.
+            <pre><code>SELECT A.*, B.*
+FROM TableA A
+RIGHT JOIN TableB B ON A.id = B.id;</code></pre>
+        </li>
+        <li><strong>FULL JOIN (FULL OUTER JOIN):</strong> Returns records when there is a match in either left or right table. NULLs for non-matches on both sides.
+            <pre><code>SELECT A.*, B.*
+FROM TableA A
+FULL OUTER JOIN TableB B ON A.id = B.id;</code></pre>
+        </li>
+    </ul>
+</body>
+
     <h1>Past Year Questions of DBMS (2020-2024 and Model Questions)</h1>
     <section>
     <h2>1. What is Database and DBMS? List out the advantages and disadvantages of DBMS.</h2>
